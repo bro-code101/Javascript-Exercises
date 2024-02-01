@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>While Loops</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+ 
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+ 
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+
+        // let input = prompt("Enter a number");
+        // input = Number(input);
+        // let i = 0;
+        // while (i < input) {
+        // console.log(i);  // print the current value of i
+        // i++;  // increment i by 1
+        // }  
+        
+        //EG without i++
+//         let input = prompt("Enter a number");
+// input = Number(input);
+// let i = 0;
+
+// while (i < input) {
+//     console.log(i);  // print the current value of i
+// }
+// The code will keep running indefinitely and crash system 
+
+        let input;
+        do {
+            input = prompt("Enter a number");
+            input = Number(input);
+        } while(isNaN(input));
+
+        let i = 0;
+        do {
+            console.log(i);
+            i++;
+        } while(i < input);
+
+// The first do loop asks the user for a number and assigns it to the input variable. If the input is not a number, the loop will run again until a valid number is entered.
+// The let i = 0 line initializes a counter variable i to 0.
+// The second do loop will keep running as long as i is less than input.
+// The console.log(i) line will print the value of i to the console on each iteration.
+// The i++ statement increments the value of i by 1 after each iteration.
+
+        // Swap Numbers Problem 
+
+        let a = 10;
+        let b = 20;
+
+        //Using temporary variable to swap values:
+        let temp = a
+        
+        a=b;
+        b=temp;
+
+        console.log("a=", a)
+        console.log("b=",b)
+         </script>
+    </body>
+</html>
