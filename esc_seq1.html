@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escape Sequences1</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+ 
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+ 
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+//Escape sequences can also be used to include special characters within a string. 
+//For example, \n represents a new line, and \t represents a tab. Here's an example:
+
+        let sentence = "Hello\nWorld";
+        console.log(sentence); // Output:   Hello
+                         //         World
+
+
+        let sentence1 = "Hello\tWorld";
+        console.log(sentence1); // Output: Hello   World
+
+//We can also use escape sequences together here's an example:
+
+        let sentence2 = "Hello\n\tWorld";
+        console.log(sentence2); // Output: Hello
+                                //         World
+        </script>
+    </body>
+</html>

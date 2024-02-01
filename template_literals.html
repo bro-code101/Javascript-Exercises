@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template Literals</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+ 
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+ 
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+
+const name = "Rayyan";
+const favorite = "Pepsi";
+const sentence = name + " loves " + favorite;
+console.log(sentence); // Output: "Rayyan loves Pepsi"
+
+//With template literals, you can embed variables 
+//within a string without using the + operator. 
+//We use the ${variable} syntax to embed a variable within a string
+
+//You can also use backticks ` (it is the button under your escape key) 
+//to create a string, called a template literal:
+
+const sentence1 = `${name} loves ${favorite}`;
+console.log(sentence1); // Output: "Rayyan loves Pepsi"
+
+       </script>
+    </body>
+</html>

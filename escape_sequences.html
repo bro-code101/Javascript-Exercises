@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escape Sequences</title>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 20px;
+        }
+ 
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+ 
+        th {
+            background-color: #f2f2f2;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+//Sometimes, you may want to use a character that is already used in JavaScript
+//In this case, you can use an escape sequence. An escape sequence is a 
+// backslash \ followed by a character that tells the JavaScript interpreter to 
+//interpret the following character in a special way:
+
+let sentence = 'She said, "Hello!"';
+console.log(sentence);                  // Output: She said, "Hello!"
+
+sentence = "She said, \"Hello!\"";
+console.log(sentence);                  // Output: She said, "Hello!"
+
+sentence = "She said, \"Hello!\"";      // Output: She said, "Hello!"
+       
+//1st example uses a single quote to start the string and a single quote to end the string. Since the string contains a single quote, we can use a double quote without escaping it.
+//2nd example uses a double quote to start the string and a double quote to end the string. Since the string contains a double quote, we can use a single quote without escaping it.
+//3rd example uses a single quote to start the string and a single quote to end the string. Since the string contains a single quote, we use a backslash followed by a double quote to escape it.
+       </script>
+    </body>
+</html>
